@@ -1,0 +1,19 @@
+{
+  "name": "remotekeyboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BigRedDoge",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigRedDoge/RemoteKeyboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigRedDoge/RemoteKeyboard/issues"
+  },
+  "homepage": "https://github.com/BigRedDoge/RemoteKeyboard#readme",
+  "description": ""
+}
