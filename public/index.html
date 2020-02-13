@@ -8,20 +8,22 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="main.js"></script>
         <link rel='stylesheet' href='styles.css' />
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <div class="container-fluid">
+            <div class="row"> 
+                <div id="header">
+                    <h>Remote Keyboard</h>
+                </div>
+            </div>
             <div class="row">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="input-group input-group-lg">
-                                <input class="form-control" type="text" id="keyboard">
-                                <div class="input-group-append">
-                                    <button class="btn btn-success" type="submit" id="send">Send</button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="jumbotron">
+                    <div class="input-group input-group-lg">
+                        <input class="form-control" type="text" id="keyboard">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     </div>
+                </div>
             </div>
         </div>
     </body>

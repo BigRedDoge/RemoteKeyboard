@@ -1,18 +1,14 @@
 $(document).ready(function() { 
 
-    var input = $("#keyboard").text();
+    var socket = io();
 
-    $("#send").click(function() {
-        console.log($("#keyboard").val());
-    });
-
-    input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-          // Cancel the default action, if needed
-          event.preventDefault();
-          // Trigger the button element with a click
-          // socket.io this 
-          $("#keyboard").val();
+    $("#keyboard").keypress(function(e) {
+        console.log(e.key);
+        socket.emit('keypress', e.key);
+        
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            $("#keyboard").val("");
         }
     });
 
